@@ -1,0 +1,117 @@
+.application-page>.row {
+    height: 100%;
+    padding: 0px;
+}
+
+.container-fluid .custom-row>* {
+    padding: 0 !important;
+}
+
+.col-6.d-none.d-md-block.wd-kanbas-nav {
+    padding: 0px;
+    padding-left: 0px;
+}
+
+.col-6,
+.col-3 {
+    /* border: 1px solid #000; */
+    padding-left: 0px;
+}
+
+.col-6 {
+    /* background-color: #ffcccb; */
+    padding: 0px;
+    /* background-color: #a0e57c; */
+}
+
+.col-3 {
+    /* background-color: #a0e57c; */
+    width: auto;
+
+}
+
+.custom-col-6 {
+    width: 84px;
+}
+
+.custom-col-6-2 {
+    width: calc(100% - 84px);
+}
+
+.cust-subrow {
+
+    padding-left: 12px;
+}
+
+.custom-col-6-2>div>div>span {
+    color: #b52828;
+}
+
+.custom-col-6-2>div>div>span>i {
+    size: 56px;
+    padding: 20px;
+    margin: 0px 24px;
+}
+
+.cust-col-12-a {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.cust-subcol-right>ul>div>span>button.assi-button {
+    background-color: #b52828;
+    color: white;
+}
+
+button.assi-button {
+    background-color: #b52828;
+    color: white;
+}
+
+.custom-col-6-2>div>div>button {
+    text-align: right;
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    transition: background-color .2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 14px;
+    margin-bottom: 0;
+    margin-right: 40px;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+.custom-col-6-2 .cust-col-12-a button.btn-custom {
+    float: right;
+    /* Add your custom button styles */
+}
+
+.wd-modules>li>ul>li>div>span>span{
+    font-size: 12px;
+}
+
+.wd-modules>li>ul>li>div>span>span>b{
+    font-weight: bold;
+
+}
+
+.wd-modules>li>ul>li>div>span>b>a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+
+}
