@@ -30,3 +30,212 @@
 .wd-modules > li {
   margin-bottom: 20px;
 }
+/* The home page CSS */
+.wd-modules,
+.wd-modules * {
+    border-radius: 0%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wd-modules {
+    margin: 5px;
+}
+
+.wd-modules>li {
+    background-color: #f5f5f5;
+    border: 1px solid #c7cdd1 !important;
+    border-left: none !important;
+
+}
+
+.wd-modules>li>div {
+    border-left: 1px solid #c7cdd1 !important;
+    padding: 12px 6px;
+    font-weight: 600;
+
+}
+
+.wd-modules>li>div>i {
+    padding: 8px 6px;
+}
+
+.wd-modules>li>div>span>i {
+    padding: 8px 4px;
+
+}
+
+.wd-modules>li>ul>li>div>span>i,
+.wd-modules>li>ul>li>span>i {
+    padding: 8px 4px;
+
+}
+
+.wd-modules>li>ul>li {
+    padding: 5px;
+    border-top: 1px solid #c7cdd1 !important;
+    border-left: 5px solid green;
+    font-weight: 600;
+}
+
+.wd-modules>li>ul>li>i {
+    padding: 12px;
+}
+
+.wd-modules>li {
+    margin-bottom: 20px;
+}
+
+.wd-modules-buttons {
+    text-align: right;
+    padding-bottom: 12px;
+}
+
+.wd-modules-buttons>button {
+    text-align: right;
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    transition: background-color .2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 14px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.wd-modules-container {
+    padding: 36px 48px 48px 48px;
+}
+
+
+.wd-publish {
+    padding: 20px;
+}
+
+.wd-publish>ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.wd-publish>button {
+    width: 49%;
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    transition: background-color .2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 8px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.wd-publish>button.published {
+    background: #36a33d;
+    color: #2d3b45;
+}
+
+.wd-publish>button>i {
+    padding: 4px 8px;
+}
+
+.wd-publish>ul>li>a>button {
+    width: 100%;
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    transition: background-color .2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 8px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.wd-publish>ul>li {
+    padding: 3px 0px;
+}
+
+.wd-publish>ul>li>a>button>i {
+    padding: 0px 5px;
+}
+
+.wd-publish>div.upcoming {
+
+    text-align: right;
+}
+
+
+.upcoming {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coming-up {
+    float: left;
+    /* Align "Coming Up" to the left */
+}
+
+.view-calendar {
+    float: right;
+
+}
+
+.view-calendar>a {
+    color: #b52828;
+    text-decoration: none;
+
+}
+
+.header-bar {
+    height: 24px;
+    width:100%;
+    margin: 0;
+    background-color: #f0f0f0; /* Change the background color as needed */
+    text-align: center;
+}
+
+.header-bar h2 {
+    margin: 0;
+    line-height: 24px;
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the text color as needed */
+}
