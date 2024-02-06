@@ -256,3 +256,7 @@ button.published{
     background: #36a33d;
     width: 49%;
 }
+.wd-publish>ul>li>span>a{
+    color: #b52828;
+    text-decoration: none;
+}
