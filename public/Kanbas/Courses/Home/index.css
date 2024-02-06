@@ -132,6 +132,7 @@
     padding: 4px 8px;
 }
 
+.a-button,
 button.unpublished,
 button.published,
 .wd-publish>ul>li>a>button {
@@ -259,4 +260,10 @@ button.published{
 .wd-publish>ul>li>span>a{
     color: #b52828;
     text-decoration: none;
+}
+.short-navbar>p>a.btn-navbar{
+    color: #b52828;
+}
+.a-button{
+    margin: 0px 30px;
 }
