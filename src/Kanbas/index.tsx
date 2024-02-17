@@ -15,7 +15,7 @@ function Kanbas() {
           <Route path="/" element={<Navigate to="Dashboard" />} />
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/Account" element={<h1>Account</h1>} />
-          <Route path="/Courses/:courseid/*" element={<Courses />} />
+          <Route path="/Courses/:cid/*" element={<Courses />} />
         </Routes>
       </div>
     </div>

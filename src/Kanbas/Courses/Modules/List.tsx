@@ -3,18 +3,21 @@ import "./index.css";
 import { modules } from "../../Database";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle } from "react-icons/fa";
 import { useParams } from "react-router";
+
 function ModuleList() {
   const { cid } = useParams();
   const modulesList = modules.filter((module) => module.course === cid);
-  const [selectedModule, setSelectedModule] = useState(modulesList[0]);
+  const [selectedModuleId, setSelectedModuleId] = useState(modulesList[0]?._id);
+
   return (
     <>
-      {/* <!-- Add buttons here --> */}
+    
       <ul className="list-group wd-modules">
         {modulesList.map((module) => (
           <li
+            key={module._id}
             className="list-group-item"
-            onClick={() => setSelectedModule(module)}
+            onClick={() => setSelectedModuleId(module._id)}
           >
             <div>
               <FaEllipsisV className="me-2" />
@@ -25,10 +28,10 @@ function ModuleList() {
                 <FaEllipsisV className="ms-2" />
               </span>
             </div>
-            {selectedModule._id === module._id && (
+            {selectedModuleId === module._id && module.lessons && (
               <ul className="list-group">
-                {module.lessons?.map((lesson) => (
-                  <li className="list-group-item">
+                {module.lessons.map((lesson) => (
+                  <li key={lesson._id} className="list-group-item">
                     <FaEllipsisV className="me-2" />
                     {lesson.name}
                     <span className="float-end">
@@ -45,4 +48,5 @@ function ModuleList() {
     </>
   );
 }
+
 export default ModuleList;
