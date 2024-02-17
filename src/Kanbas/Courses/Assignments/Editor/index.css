@@ -1,0 +1,50 @@
+.cust-subcol-right>div>form>div.cust-form-row-1{
+    align-items: center;
+}
+
+a.btn.btn-secondary{
+    text-align: right;
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    transition: background-color .2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 14px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">");
+}
+ol.breadcrumb {
+    padding: 15px;
+}
+ol.breadcrumb>i {
+    color: #b52828;
+    padding: 10px;
+}
+ol.breadcrumb>li>a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: "Segoe UI", sans-serif;
+}
+.addButton {
+    background-color: lightgrey; 
+    width: 100%;
+  }

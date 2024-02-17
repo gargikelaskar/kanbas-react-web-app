@@ -25,7 +25,7 @@ function KanbasNavigation() {
   ];
   const { pathname } = useLocation();
   return (
-    <div>
+    <div className="col-md-6 d-none d-md-block wd-kanbas-nav custom-col-6">
     <img className="wd-kanbas-navigation-img" src="/images/logo.png" alt="Logo"></img>
     <ul className="wd-kanbas-navigation">
       {links.map((link, index) => (

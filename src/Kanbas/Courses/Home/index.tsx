@@ -5,9 +5,7 @@ import Status from "./Status";
 
 function Home() {
   return (
-
     <div className="d-flex">
-      
       <div className="flex-fill">
         <ul className="list-group wd-modules">
         <Modules/>
