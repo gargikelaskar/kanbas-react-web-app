@@ -1,4 +1,4 @@
-import React from "react";
+import { useLocation } from "react-router-dom";
 import { useParams, Routes, Route, Navigate } from "react-router-dom";
 import courses from "../Database/courses.json";
 import { HiMiniBars3 } from "react-icons/hi2";
@@ -14,10 +14,16 @@ import { IoIosArrowForward } from "react-icons/io";
 function Courses() {
   const { cid } = useParams();
   const course = courses.find((course) => course._id === cid);
+
+  const { pathname } = useLocation();
+  const parts = pathname.split('/');
+  const lastSegment = parts[parts.length - 1];
+  const secondlastSegment = parts[parts.length - 2];
+
   return (
     <>
       <h5 className="custom-top-navbar custom-breadcrumb">
-      <span className="custom-top-breadcrumb"><HiMiniBars3 /> Course {course?.name}</span> <IoIosArrowForward/>
+      <span className="custom-top-breadcrumb"><HiMiniBars3 /> Course {course?.name}.{secondlastSegment}</span> <IoIosArrowForward/>{lastSegment}
       </h5>
       <div className="d-flex">
       <div className="d-none d-md-block">

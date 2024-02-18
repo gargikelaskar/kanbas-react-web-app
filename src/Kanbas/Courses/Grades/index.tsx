@@ -1,6 +1,7 @@
-import React from "react";
+import "./index.css";
 import { assignments, enrollments, grades, users } from "../../Database";
 import { useParams } from "react-router-dom";
+import GradesButtons from "./GradesButtons";
 
 function Grades() {
   const { cid } = useParams();
@@ -11,9 +12,9 @@ function Grades() {
 
   return (
     <div>
-      <h1>Grades</h1>
+      <GradesButtons/>
       <div className="table-responsive">
-        <table className="table">
+        <table className="table table-striped table-bordered">
           <thead>
             <tr>
               <th>Student Name</th>

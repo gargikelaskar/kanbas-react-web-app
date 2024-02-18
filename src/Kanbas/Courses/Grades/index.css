@@ -1,0 +1,67 @@
+
+.col-3.wd-modules-container.flex-fill.cust-subcol-right{
+    padding-top: 0px;
+}
+
+.col-md-12.text-right{
+    text-align: right;
+}
+
+button.btn.btn-primary.dropdown-toggle,
+.col-md-6>button,
+.col-md-12.text-right>button>div>button,
+.col-md-12.text-right>button{
+    text-align: right;
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    transition: background-color .2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 14px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+th.student-name{
+    width: 180px;
+}
+
+.table th.student-name,
+.table td.student-name {
+    width: 200px; /* Set your preferred width */
+}
+
+.table.table-striped.table-bordered th.student-name,
+.table.table-striped.table-bordered td.student-name {
+    width: 200px; /* Set your preferred width */
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">");
+}
+ol.breadcrumb {
+    padding: 15px;
+}
+ol.breadcrumb>i {
+    color: #b52828;
+    padding: 10px;
+}
+ol.breadcrumb>li>a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: "Segoe UI", sans-serif;
+}
