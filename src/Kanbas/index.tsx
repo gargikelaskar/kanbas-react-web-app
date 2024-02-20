@@ -3,11 +3,12 @@ import KanbasNavigation from "./Navigation";
 import { Routes, Route } from "react-router-dom";
 import { Navigate } from "react-router";
 import Courses from "./Courses";
+import "./index.css";
 
 function Kanbas() {
   return (
     <div className="d-flex">
-      <div style={{ height: 100 }}>
+      <div className="left-navb">
         <KanbasNavigation />
       </div>
       <div style={{ flexGrow: 1 }}>
