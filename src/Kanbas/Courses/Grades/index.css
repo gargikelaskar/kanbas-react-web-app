@@ -65,3 +65,6 @@ ol.breadcrumb>li>a {
     font-size: 18px;
     font-family: "Segoe UI", sans-serif;
 }
+span.input-group-text {
+    height: 40px;
+}
