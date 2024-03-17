@@ -11,7 +11,7 @@ import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
 import { IoIosArrowForward } from "react-icons/io";
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { cid } = useParams();
   const course = courses.find((course) => course._id === cid);
 
