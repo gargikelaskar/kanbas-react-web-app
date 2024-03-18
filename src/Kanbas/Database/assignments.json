@@ -39,7 +39,7 @@
     "availableUntilDate": "2024-04-01",
     "course": "FS201"
   },
-  { "_id": "A202", "title": "Flow Analysis", "course": "FS102" },
+  { "_id": "A202", "title": "Flow Analysis", "description": "Assignment description", "course": "FS102" },
   { "_id": "A203", "title": "Heating Analysis", "course": "FS102" },
   { "_id": "A301", "title": "Structural Design Task", "course": "FS103" },
   { "_id": "A302", "title": "Orbital Calculations", "course": "FS103" },

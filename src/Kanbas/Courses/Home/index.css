@@ -268,3 +268,34 @@ button.published{
 .a-button{
     margin: 0px 30px;
 }
+
+button.btn.btn-danger.me-1 {
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+button.btn.btn-secondary.me-1 {
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+button.btn.btn-success.me-1 {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 8px 15px;
+}
+.modHeading{
+    font-weight: 500;
+    font-size: 18px;
+}
+.c{
+    padding: 5px;
+    border-top: 1px solid #c7cdd1 !important;
+    border-left: 5px solid green;
+    font-weight: 200;
+    font-size: 15px;
+    
+}
+.form-control{
+    padding: 10px;
+    border: 1px solid #989ea2; 
+    border-radius: 10px;
+}

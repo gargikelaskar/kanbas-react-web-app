@@ -8,7 +8,6 @@ function Modules() {
         <select>
           <option value="Publish All">Publish All</option>
         </select>
-        <button type="button">+ Module</button>
       </div>
       <ModuleList />
     </div>

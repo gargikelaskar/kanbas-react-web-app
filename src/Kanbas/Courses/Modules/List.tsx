@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -8,10 +7,7 @@ import {
   setModule,
 } from "./reducer";
 import { KanbasState } from "../../store";
-import "./index.css";
-import { modules } from "../../Database";
-import { FaEllipsisV, FaCheckCircle, FaPlusCircle } from "react-icons/fa";
-
+import { HiDotsVertical } from "react-icons/hi";
 
 
 function ModuleList() {
@@ -22,41 +18,50 @@ function ModuleList() {
     state.modulesReducer.module);
   const dispatch = useDispatch();
   return (
-    <ul className="list-group">
+    <ul className="list-group border border-light">
       <li className="list-group-item">
-        <button
-          onClick={() => dispatch(addModule({ ...module, course: cid }))}>
-          Add
-        </button>
-        <button
-          onClick={() => dispatch(updateModule(module))}>
-          Update
-        </button>
-        <input
+        <input className="form-control"
           value={module.name}
           onChange={(e) =>
             dispatch(setModule({ ...module, name: e.target.value }))
-          }/>
-        <textarea
+          }
+        /><br/>
+        <textarea className="form-control"
           value={module.description}
           onChange={(e) =>
             dispatch(setModule({ ...module, description: e.target.value }))
-          }/>
+          }
+        />
+        <span className="float-end">
+          <button className="btn btn-success me-1"
+            onClick={() => dispatch(addModule({ ...module, course: cid }))}
+          >Add Module
+          </button>
+          <button onClick={() => dispatch(updateModule(module))} className="btn btn-secondary me-1"
+          >Update Module</button>
+        </span>
       </li>
       {moduleList
         .filter((module) => module.course === cid)
         .map((module, index) => (
-          <li key={index} className="list-group-item">
-            <button
-              onClick={() => dispatch(setModule(module))}>
-              Edit
-            </button>
-            <button
-              onClick={() => dispatch(deleteModule(module._id))}>
-              Delete
-            </button>
-            <h3>{module.name}</h3>
-            <p>{module.description}</p>
+          <li key={index} className="list-group-item c">
+            
+            <div className="modHeading"><HiDotsVertical />{module.name}</div>
+            <span>{module.description}</span>
+            <span className="float-end">
+              <button
+                className="btn btn-secondary me-1"
+                onClick={() => dispatch(setModule(module))}
+              >
+                Edit
+              </button>
+              <button
+                className="btn btn-danger me-1"
+                onClick={() => dispatch(deleteModule(module._id))}
+              >
+                Delete
+              </button>
+            </span>
           </li>
         ))}
     </ul>

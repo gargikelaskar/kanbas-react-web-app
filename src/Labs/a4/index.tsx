@@ -4,7 +4,13 @@ import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
 import EventObject from "./EventObject";
 import Counter from "./Counter";
-
+import BooleanStateVariables from "./BooleanStateVariables";
+import StringStateVariables from "./StringStateVariables";
+import DateStateVariable from "./DateStateVariable";
+import ObjectStateVariable from "./ObjectStateVariable";
+import ArrayStateVariable from "./ArrayStateVariable";
+import ParentStateComponent from "./ParentStateComponent";
+import ReduxExamples from "./ReduxExamples";
 const Assignment4 = () => {
     function sayHello() {
         alert("Hello");
@@ -18,6 +24,14 @@ const Assignment4 = () => {
       <PassingFunctions theFunction={sayHello} />
       <EventObject/>
       <Counter/>
+      <BooleanStateVariables/>
+      <StringStateVariables/>
+      <DateStateVariable/>
+      <ObjectStateVariable/>
+      <ArrayStateVariable/>
+      <ParentStateComponent/>
+      <hr/>
+      <ReduxExamples/>
     </>
   );
 };

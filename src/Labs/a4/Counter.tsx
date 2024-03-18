@@ -5,8 +5,8 @@ function Counter() {
   return (
     <div>
       <h2>Counter: {count}</h2>
-      <button onClick={() => setCount(count + 1)}>Up</button>
-      <button onClick={() => setCount(count - 1)}>Down</button>
+      <button onClick={() => setCount(count + 1)} className="btn btn-success me-2">Up</button>
+      <button onClick={() => setCount(count - 1)} className="btn btn-danger me-2">Down</button>
     </div>
   );
 }
