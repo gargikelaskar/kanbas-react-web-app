@@ -111,10 +111,10 @@ function AssignmentEditor() {
           <br />
 
           <div className="row">
-            <div className="col-md-4 text-end">
+            <div className="col-md-3 text-end">
               <label className="mx-3">Assignment Group</label>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-9">
               <select className="form-control">
                 <option>ASSIGNMENTS</option>
                 <option>QUIZZES</option>
@@ -124,10 +124,10 @@ function AssignmentEditor() {
           <br />
 
           <div className="row">
-            <div className="col-md-4 text-end">
+            <div className="col-md-3 text-end">
               <label>Display Grade as</label>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-9">
               <select className="form-control">
                 <option>Percentage</option>
                 <option>Marks</option>
@@ -142,10 +142,10 @@ function AssignmentEditor() {
           <br />
 
           <div className="row ">
-            <div className="col-md-4 text-end">
+            <div className="col-md-3 text-end">
               <label>Submission Type</label>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-9">
               <div className="border p-2">
                 <select className="form-control">
                   <option>Online</option>
@@ -176,10 +176,10 @@ function AssignmentEditor() {
           <br />
 
           <div className="row">
-            <div className="col-md-4 text-end">
+            <div className="col-md-3 text-end">
               <label>Assign</label>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-9">
               <div className="border p-2">
                 <label>
                   <b>Assign to</b>
