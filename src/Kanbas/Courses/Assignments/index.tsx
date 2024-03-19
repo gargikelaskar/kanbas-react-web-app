@@ -25,6 +25,14 @@ function Assignments() {
         navigate(`/Kanbas/Courses/${cid}/Assignments/Editor`);
     }
 
+      const handleDelAssignment = 
+        (assignmentId:string) => {
+          const yesState = window.confirm("Do you want to delete this assignment?");
+            if(yesState){
+                dispatch(deleteAssignment(assignmentId));
+            }
+        };
+        
     return (
       <>
         <div className="d-flex">
@@ -90,7 +98,7 @@ function Assignments() {
                       <button
                         className="btn btn-danger me-1"
                         style={{ borderRadius: "6px" }}
-                        onClick={() => dispatch(deleteAssignment(assignment._id))}
+                        onClick={() => handleDelAssignment(assignment._id)}
                         
                       >
                         Delete
