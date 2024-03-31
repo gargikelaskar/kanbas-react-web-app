@@ -16,14 +16,14 @@
   background-color: white;
 }
 .wd-kanbas-navigation li.wd-active a {
-  color: red;
+  color: #b52828;
 }
 .wd-kanbas-navigation a {
   color: white;
   text-decoration: none;
 }
 .wd-kanbas-navigation a i {
-  color: red;
+  color: #b52828;
   font-size: 2em;
   margin-bottom: 5px;
 }

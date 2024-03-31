@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useParams, Routes, Route, Navigate } from "react-router-dom";
-import courses from "../Database/courses.json";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
 import "./index.css";
@@ -11,9 +12,22 @@ import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
 import { IoIosArrowForward } from "react-icons/io";
 
-function Courses({ courses }: { courses: any[]; }) {
+function Courses() {
   const { cid } = useParams();
-  const course = courses.find((course) => course._id === cid);
+  const COURSES_API = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState<any>({ _id: "" });
+  const findCourseById = async (cid?: string) => {
+    const response = await axios.get(
+      `${COURSES_API}/${cid}`
+    );
+    setCourse(response.data);
+  };
+
+  useEffect(() => {
+    findCourseById(cid);
+  }, [cid]);
+
+  //const course = courses.find((course) => course._id === cid);
 
   const { pathname } = useLocation();
   const parts = pathname.split('/');
@@ -49,13 +63,6 @@ function Courses({ courses }: { courses: any[]; }) {
       
     </div>
 
-
-      
-      
-
-      {/* <pre>
-        <code>{JSON.stringify(course, null, 2)}</code>
-      </pre> */}
     </>
   );
 }
