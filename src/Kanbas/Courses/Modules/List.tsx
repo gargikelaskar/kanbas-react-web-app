@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./index.css";
-// import { modules } from "../../Database";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle } from "react-icons/fa";
 import { useParams } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
@@ -82,15 +81,16 @@ function ModuleList() {
           <select>
             <option value="Publish All">Publish All</option>
           </select>
+          <span>
           <button
-            className="btn btn-danger"
+            className="addModBtn"
             onClick={() => {
               clearModule();
               showAddEditModal(true);
             }}
           >
             + Module
-          </button>
+          </button></span>
         </div>
       </div>
       <hr />
@@ -112,7 +112,7 @@ function ModuleList() {
                     {module.name}
                     <br />
                     <small>
-                      {module.description} | {module._id}
+                      {module.description}
                     </small>
                   </div>
                   <div className="ms-auto" style={{ alignSelf: "center" }}>

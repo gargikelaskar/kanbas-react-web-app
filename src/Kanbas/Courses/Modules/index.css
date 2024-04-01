@@ -122,3 +122,29 @@ span.editBtn{
   cursor: pointer;
   text-decoration: none;
 }
+
+.addModBtn {
+  margin: 10px;
+  text-align: right;
+  background: #b52828;
+  color: #ffffffe7;
+  border: 1px solid;
+  border-color: #c7cdd1;
+  border-radius: 3px;
+  transition: background-color .2s ease-in-out;
+  display: inline-block;
+  position: relative;
+  padding: 8px 14px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+  text-shadow: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
