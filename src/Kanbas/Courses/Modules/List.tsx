@@ -241,7 +241,7 @@ function ModuleList() {
             </Modal.Header>
             <Modal.Body>
               <div className="container align-items-center">
-                <div style={{ color: "red" }}>
+                <div>
                   Confirm Module: {module.name} to be deleted
                 </div>
                 <hr />
