@@ -1,3 +1,14 @@
+# Kanbas Web Application
+This project is part of Northeastern University's CS5610 Web Development course. \
+The following are the deployement links for the incremental projects that build the Kanbas Application: \
+A1 (HTML) -> [https://a1--magical-tapioca-9bbdf0.netlify.app/](https://a1--magical-tapioca-9bbdf0.netlify.app/kanbas/courses/home/screen) \
+A2 (CSS) -> [https://a2--magical-tapioca-9bbdf0.netlify.app/](https://a2--magical-tapioca-9bbdf0.netlify.app/kanbas/dashboard/screen) \
+A3 (React-SPA) -> https://a3--magical-tapioca-9bbdf0.netlify.app/#/Kanbas/Dashboard \
+A4 (React-State) -> https://a4--magical-tapioca-9bbdf0.netlify.app/#/Kanbas/Dashboard \
+A5 (HTTP Servers and RESTful APIs) -> https://a5--magical-tapioca-9bbdf0.netlify.app/#/Kanbas/Dashboard \
+A6 (MongoDB Database) -> https://a6--moonlit-trifle-e9f3e1.netlify.app/#/Kanbas/Dashboard 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
